@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "facts",
+  "info": {
+    "singularName": "fact",
+    "pluralName": "facts",
+    "displayName": "fact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "factsAbout": {
+      "type": "component",
+      "repeatable": true,
+      "component": "facts-about.facts"
+    }
+  }
+}
