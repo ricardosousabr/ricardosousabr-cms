@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_facts_about_facts",
+  "info": {
+    "displayName": "facts"
+  },
+  "options": {},
+  "attributes": {
+    "fact": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

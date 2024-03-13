@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_project_technologies_projects",
+  "info": {
+    "displayName": "project",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "srcMobile": {
+      "type": "string"
+    },
+    "srcDesktop": {
+      "type": "string",
+      "required": true
+    },
+    "technologie": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project-technologie.project-technologie",
+      "required": true
+    }
+  }
+}

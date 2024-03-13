@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_seo_images",
+  "info": {
+    "displayName": "images"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "width": {
+      "type": "biginteger",
+      "required": true
+    },
+    "height": {
+      "type": "biginteger",
+      "required": true
+    },
+    "alt": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

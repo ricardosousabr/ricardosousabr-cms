@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_seo_additional_link_tags",
+  "info": {
+    "displayName": "additionalLinkTags",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rel": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "as": {
+      "type": "string",
+      "required": false
+    },
+    "type": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
