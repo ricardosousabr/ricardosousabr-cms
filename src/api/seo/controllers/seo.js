@@ -12,7 +12,7 @@ module.exports = createCoreController("api::seo.seo", ({ strapi }) => ({
   async find(ctx) {
     const seoAttributes = await strapi.entityService.findMany('api::seo.seo', {
       fields: ['title', 'description'],
-      populate: ['OpenGraph', 'additionalLinkTags'],
+      populate: ['OpenGraph.image', 'additionalLinkTags'],
     });
     const headerAttributes = await strapi.entityService.findMany('api::header.header', {
       fields: ['title', 'subtitle', 'motovationalPhrase', 'image', 'button']
@@ -30,9 +30,8 @@ module.exports = createCoreController("api::seo.seo", ({ strapi }) => ({
     });
     const projectAttributes = await strapi.entityService.findMany('api::project.project', {
       fields: ['title', 'subtitle', 'button'],
-      populate: ["Projects"],
+      populate: ['Projects.ProjectTechnologie'],
     });
-
     const footerAttributes = await strapi.entityService.findMany('api::footer.footer', {
       fields: ['title', 'subtitle', 'email', 'phone'],
     });

@@ -33,11 +33,10 @@ export interface ProjectTechnologieTechnologiesProject
     link: Attribute.String & Attribute.Required;
     srcMobile: Attribute.String;
     srcDesktop: Attribute.String & Attribute.Required;
-    technologie: Attribute.Component<
+    ProjectTechnologie: Attribute.Component<
       'project-technologie.project-technologie',
       true
-    > &
-      Attribute.Required;
+    >;
   };
 }
 

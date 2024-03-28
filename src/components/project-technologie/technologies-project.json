@@ -20,11 +20,10 @@
       "type": "string",
       "required": true
     },
-    "technologie": {
+    "ProjectTechnologie": {
       "type": "component",
       "repeatable": true,
-      "component": "project-technologie.project-technologie",
-      "required": true
+      "component": "project-technologie.project-technologie"
     }
   }
 }
